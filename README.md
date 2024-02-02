@@ -22,6 +22,8 @@ npx create-liveblocks-app@latest --init --framework react
 - Note :- By default, Liveblocks is configured to work without an authentication endpoint where everyone automatically has access to rooms.
 - Now can can see multiple users real-time using the application
 - Install and setup shadcn UI library using nextjs.
+- File structure & shadcn ui setup with other folders like lib, public, hooks, types , constants etc. for asset and code management.
+-  Implemented Live Cursors for the canvas board . Page.tsx, Live.tsx, Cursor.tsx, CursorChat.tsx, LiveCursors.tsx etc. Real-time communication established !!!
 ## Getting Started
 
 First, run the development server:
