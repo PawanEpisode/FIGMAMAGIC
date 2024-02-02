@@ -24,6 +24,10 @@ npx create-liveblocks-app@latest --init --framework react
 - Install and setup shadcn UI library using nextjs.
 - File structure & shadcn ui setup with other folders like lib, public, hooks, types , constants etc. for asset and code management.
 -  Implemented Live Cursors for the canvas board . Page.tsx, Live.tsx, Cursor.tsx, CursorChat.tsx, LiveCursors.tsx etc. Real-time communication established !!!
+- Changes added for Reactions emoji in live.tsx component, Added FlyingReaction component, ReactionButton component and the CSS for flying reactions. Both are important to implement real-time reaction interaction :- useBroadcastEvent, useEventListener,
+- Customized hook for setInterval 
+- FlyingReaction component, ReactionButton component and the CSS for flying reactions , all three comes from documentation of [liveblocks](https://liveblocks.io/examples/live-cursors-chat/nextjs-live-cursors-chat)
+- 
 ## Getting Started
 
 First, run the development server:
