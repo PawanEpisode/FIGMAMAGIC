@@ -27,6 +27,12 @@ npx create-liveblocks-app@latest --init --framework react
 - Changes added for Reactions emoji in live.tsx component, Added FlyingReaction component, ReactionButton component and the CSS for flying reactions. Both are important to implement real-time reaction interaction :- useBroadcastEvent, useEventListener,
 - Customized hook for setInterval 
 - FlyingReaction component, ReactionButton component and the CSS for flying reactions , all three comes from documentation of [liveblocks](https://liveblocks.io/examples/live-cursors-chat/nextjs-live-cursors-chat)
+- nextjs config for images added
+- layout for navbar and live
+- Navbar component created containing active users avatars
+- memoized the ActiveUsers component using usememo
+- Added Avatar.module.css, avatar component and index.module.css from liveblocks docs
+- changes in the utils file in lib folder
 - 
 ## Getting Started
 

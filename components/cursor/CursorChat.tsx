@@ -45,6 +45,7 @@ const CursorChat = ({
           <div
             className="absolute left-2 top-5 bg-blue-500 
         px-4 py-2 text-sm leading-relaxed text-white rounded-[20px]"
+          onKeyUp={(event) => event.stopPropagation()} // when typing , no event should be propagated
           >
             {cursorState?.previousMessage && (
               <div>{cursorState?.previousMessage}</div>
