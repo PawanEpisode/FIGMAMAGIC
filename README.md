@@ -20,6 +20,8 @@ npx create-liveblocks-app@latest --init --framework react
 - After creating your room file, it’s time to join it. Import your room into your page.tsx file, and place your collaborative app components inside it.
 - Now that we’re connected to a room, we can start using the Liveblocks hooks. The first we’ll add is useOthers, a hook that provides information about which other users are connected to the room.
 - Note :- By default, Liveblocks is configured to work without an authentication endpoint where everyone automatically has access to rooms.
+- Now can can see multiple users real-time using the application
+- Install and setup shadcn UI library using nextjs.
 ## Getting Started
 
 First, run the development server:
