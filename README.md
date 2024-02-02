@@ -1,5 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a FIGMA APP [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+- Initialize the Application using Nextjs, Tppescript, Tailwind CSS , Eslint and integrated with github remote repository.
+- We need canvas to do all the work, So [Fabric.js](https://www.npmjs.com/package/fabric) framework will be helpful to work with HTML5 canvas element.
+- A package called [uuid](https://www.npmjs.com/package/uuid) which will be used to generate unique ids.Because each of the elements in the app must have its own unique ids.
+- Another package called [liveblocks/react](https://liveblocks.io/docs/get-started/react) will enable to implement real-time collaboration features into our(any) app.
+- Sign up on live blocks , created a project. Added the API key to environment file.
+- installed fabric, uuid,  @liveblocks/client, @liveblocks/react .
+ ```bash
+npm install @liveblocks/client @liveblocks/react fabric uuid
+```
+- Initialize the liveblocks.config.ts file using :- 
+ ```bash
+npx create-liveblocks-app@latest --init --framework react
+```
+- We will be using React Suspense Hooks and yes for typescript. 
+- In the liveblocks config file, added the public key from the .env.local file 
+- Created Three components Room.tsx, Collaborative.tsx and page.tsx .
+- Liveblocks uses the concept of rooms, separate virtual spaces where collaborate. To create a real-time experience, multiple users must be connected to the same room. 
+- After creating your room file, it’s time to join it. Import your room into your page.tsx file, and place your collaborative app components inside it.
+- Now that we’re connected to a room, we can start using the Liveblocks hooks. The first we’ll add is useOthers, a hook that provides information about which other users are connected to the room.
+- Note :- By default, Liveblocks is configured to work without an authentication endpoint where everyone automatically has access to rooms.
 ## Getting Started
 
 First, run the development server:
@@ -14,20 +34,10 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
